@@ -1,3 +1,94 @@
-.placeholder {
-	background-color: lightskyblue;
+body{
+	margin: 0px;
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+	background-color: #e0ffff;
+}
+
+.nav-right{
+	display: flex;
+}
+
+.navbar > .nav-right > div {
+	margin-right: 20px;
+	font-size: 0.9em;
+}
+
+.nav-wrapper {
+	/*setting up for the fade in/out underlines for navbar options*/
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+.nav-wrapper a{
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+/*creates fade transitions and underlines for navbar options*/
+.nav-wrapper:hover{
+	border-bottom: 1px solid black;
+}
+.nav-wrapper a:hover{
+	color: black;
+}
+
+.row{
+	display: flex;
+}
+.column{
+	float: left;
+	padding: 10px;
+	height: 500px;
+	background-color: #e4f6f8;
+}
+
+.left{
+	width: 35%;
+}
+
+.left > img{
+	border-radius: 50%
+}
+
+.center{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20%;
+	width: 100%;
+}
+.right{
+	width: 75%
+}
+
+.right-text 
+{
+	color: #3d3d3d;
+}
+.right-text h2{
+	font-size: 25px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	margin-top: 100px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+
+.right-text h3{
+	margin-left: 51px;
+	margin-right: 50px;
+}
+
+.right-text p{
+	margin-left: 51px;
+	margin-right:50px;
+	font-size: 15px;
+	line-height: 165%;
 }
