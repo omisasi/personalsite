@@ -1,63 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset ="utf-8" />
-	<title>Page Title</title>
+	<meta charset ="utf-8">
+	<title>Olivia Misasi</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="styles.css">
+	<meta http-equiv="X-UA-Comptible" content="IE=edge">
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<header id="HOME" style="background-position: 50% -125px;">
-	<div class="container">
-		<div class="navbar">
-			<div class="nav-left">
-				<div class="name">
-					<div>OLIVIA MISASI</div>
+	<div class="lets-go">
+		<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #e0ffff">
+			<!-- NAVBAR CONTAINER -->
+			<div class="container">
+				<!-- NAVBAR HEADER; toggle and brand -->
+				<div class="navbar-header">
+					<!-- TOGGLE BUTTON; mobile display-->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-nav-collapse">
+						<span class="sr-only"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#" style="color: #3d4849">OLIVIA MISASI</a>
 				</div>
-			</div> <!-- /.nav-left collapse-->
 
-			<div class = "nav-right">
-				<div class="nav-wrapper">
-					<a href="index.html">HOME</a>
-				</div>
-				<div class="nav-wrapper">
-					<a href="index.html">ABOUT</a>
-				</div>
-				<div class="nav-wrapper">
-					<a href="index.html">PROJECTS</a>
-				</div>
-				<div class="nav-wrapper">
-					<a href="index.html">CONTACT</a>
-				</div>
-				<div class="nav-wrapper">
-					<a href="images/MisasiResume.pdf">RESUME</a>
-				</div>
-			</div> <!-- /.nav-right collapse-->
-		</div> <!-- /.navbar collapse-->
-	</div> <!-- /.container collapse-->
-</header>
+				<!-- NAVBAR MENU; links, forms, etc for toggle -->
+				<div class="collapse navbar-collapse" id="example-nav-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#HOME">HOME</a></li>
+						<li><a href="#ABOUT">ABOUT</a></li>
+						<li><a href="#PROJECTS">PROJECTS</a></li>
+						<li><a href="#CONTACT">CONTACT</a></li>
+						<li><a href="images/MisasiResume.pdf">RESUME</a></li>
+					</ul> <!-- /.nav-right collapse-->
+				</div> <!-- /.navbar-collapse -->
+			</div> <!-- /.container-->
+		</nav>
+	</div>
 
-<section class="about_me" id="ABOUT"> 
+<section class="introduction", id="HOME"> 
 	<div class="container">
-		<div class="row">
-			<div class="column left">
-				<img src="images/me.JPG" alt="" class="center">
+		<div class="row needs-padding">
+			<div class="col-md-4 top-margin">
+				<img src="images/me.PNG" alt="" class="img-responsive center-block" style="border-radius: 50%">
 			</div>
-			<div class="column right">
+			<div class="col-md-8">
 				<div class="right-text">
-				<h2>Hi! Nice to meet you.</h2>
+			    <h2>Hi! Nice To Meet You.</h2>
 				<h3>My name is Olivia Misasi and I am currently a Software Engineering student at the University of Waterloo</h3>
-				<p> I am interested in combining software with artistry, whether that be UX/UI design, graphic design or animation. As an extroverted person, I enjoy getting to know others and art allows people to express themselves in their truest form. In my case, software happens to be the gateway. Being in this position as a developer allows me to not only better understand the person behind the user I am servicing, but also allows said users to learn more about me through what I create. Over the next five years in university, I hope to further myself in these fields and devote my time to a continuous flow of creativity.
+				<p> I am interested in combining software with artistry, whether that be UX/UI design, graphic design or animation. As an extroverted person, I enjoy getting to know others and art allows people to express themselves in their truest form. In my case, software happens to be the gateway. Being in this position as a developer allows me to not only better understand the person behind the user I am servicing, but also allows said users to learn more about me through what I create. Over the next five years in university, I hope to further myself in these fields and devote my time to continuously create and innovate. </p>
 				</div> 
 			</div>
 		</div>
+		<img src="images/divider.PNG" alt="" class="img-responsive center-block">
 	</div>
 </section>
 
-<section class="about_me_2">
+<section class="about-me-2", id="ABOUT">
 	<div class="container">
 		<div class="row">
+			<div class="col-md-4 text-center">
+				<div class="attribute">
+					<h2>Writer</h2>
+					<img src="images/writer.PNG">
+					<p>Writing allows me to describe my feelings and experiences when my voice can't find the words to express them in their entirity.</p>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="attribute">
+					<h2>Developer</h2>
+					<img src="images/developer.PNG">
+					<p>Innovation presents the chance for me to help all those in need, creates real change and keeps the world spinning on its axis.</p>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="attribute">
+					<h2>Designer</h2>
+					<img src="images/designer.PNG">
+					<p>Art gives me the opportunity to bring beauty and vivacity - a pop of colour - to life that paragraphs and lines of code lack. </p>
+				</div>
+			</div>
 		</div>
+		<img src="images/divider.PNG" alt="" class="img-responsive center-block">
 	</div>
 </section>
 </body>
