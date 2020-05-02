@@ -3,6 +3,13 @@ body{
 	background-color: #e4f6f8;
 }
 
+/* DIVDER */
+.divider{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+/* HOME */
 .needs-padding{
 	padding:50px;
 }
@@ -35,11 +42,13 @@ body{
 	margin-right:50px;
 	font-size: 15px;
 	line-height: 165%;
-	margin-bottom: 0px;
+	margin-bottom: -30px;
 }
 
+/* ABOUT */
+
 .col-md-4 .attribute{
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .attribute h2{
@@ -51,5 +60,134 @@ body{
 .attribute p{
 	font-size: 15px;
 	margin-top: 20px;
+}
+
+/* PROJECTS */
+
+.projects-intro h2{
 	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+.image {
+	width: 100%;
+	height: 100%;
+ 	float: left;
+  	overflow: hidden;
+ 	position: relative;
+ 	cursor: default;
+ 	transition: all 1s;
+}
+
+.image .image-overlay {
+  	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:#e0ffff;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: all 1s;
+	border-radius: 10px;
+}
+
+.image:hover .image-overlay {
+ 	opacity: 1;
+ }
+
+.image img {
+	width: 100%;
+	display: block;
+ 	position: relative;
+  	transition: all 0.35s;
+  	border-radius: 10px;
+}
+
+.image-overlay h2{
+	position: absolute;
+	margin: 0px;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+.image-overlay a{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 15px;
+	color: #3d3d3d;
+	text-transform: uppercase;
+}
+
+/*CONTACT*/
+
+.contact-me{
+	margin-top: 10px;
+	padding-bottom: 40px;
+}
+.contact-text h3{
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 0;
+}
+
+.contact-text h4{
+	text-align: center;
+	padding-top: 10px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3d4849;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 5px; /* Add a top margin */
+  margin-bottom: 10px; /* Bottom margin */
+}
+
+button[type=submit] {
+  background-color: #296d98;
+  color: #ececec;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #1c4966;
+}
+
+ul.social-media-icons{
+	list-style: none;
+	text-align: center;
+	margin-right: 30px;
+	padding-top: 5px;
+}
+
+ul.social-media-icons li{
+	display: inline;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+ul.social-media-icons li a{
+	color: #3d3d3d;
+}
+
+/* FOOTER */
+.footer{
+	background-color: #e0ffff;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid;
+	border-top-color: #ececec;
+}
+
+.footer h4{
+	font-size: 12px;
+	font-color: #3d3d3d;
+	text-transform: uppercase;
 }
