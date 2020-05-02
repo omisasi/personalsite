@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
 <head>
 	<meta charset ="utf-8">
@@ -9,6 +10,8 @@
 	<link href="styles.css" rel="stylesheet" type="text/css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  	<script src="https://kit.fontawesome.com/bc2b1476b5.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="lets-go">
@@ -34,7 +37,7 @@
 						<li><a href="#ABOUT">ABOUT</a></li>
 						<li><a href="#PROJECTS">PROJECTS</a></li>
 						<li><a href="#CONTACT">CONTACT</a></li>
-						<li><a href="images/MisasiResume.pdf">RESUME</a></li>
+						<li><a href="images/MisasiResume.pdf" target="_blank">RESUME</a></li>
 					</ul> <!-- /.nav-right collapse-->
 				</div> <!-- /.navbar-collapse -->
 			</div> <!-- /.container-->
@@ -55,7 +58,9 @@
 				</div> 
 			</div>
 		</div>
-		<img src="images/divider.PNG" alt="" class="img-responsive center-block">
+		<div class="divider">
+			<img src="images/divider.PNG" alt="" class="img-responsive center-block">
+		</div>
 	</div>
 </section>
 
@@ -84,8 +89,87 @@
 				</div>
 			</div>
 		</div>
-		<img src="images/divider.PNG" alt="" class="img-responsive center-block">
+		<div class="divider">
+			<img src="images/divider.PNG" alt="" class="img-responsive center-block">
+		</div>
 	</div>
 </section>
+
+<section class="projects", id="PROJECTS">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="projects-intro">
+					<h2>Take a look at some of my work below:</h2>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="image">
+					<img src="images/WATCopter-4.JPG" alt="">
+					<div class="image-overlay">
+						<h2>The WATCopter</h2>
+						<a href="https://youtu.be/GbYKSlvikvY" target="_blank">View Project</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="image">
+				<img src="images/heforshe.JPG" alt="">
+					<div class="image-overlay">
+						<h2><i>A Life's Work</i> Publication</h2>
+						<a href="https://uwaterloo.ca/heforshe/sites/ca.heforshe/files/uploads/files/heforsheanthology_pdf_0.pdf" target="_blank">View Project</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="image">
+					<img src="images/smartpot-4.JPG" alt="">
+					<div class="image-overlay">
+						<h2>SmartPot</h2>
+						<a href="https://youtu.be/gR73AiTdFzA" target="_blank">View Project</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider">
+			<img src="images/divider.PNG" alt="" class="img-responsive center-block">
+		</div>
+	</div>
+</section>
+
+<section class="contact-me", id="CONTACT">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="contact-text">
+					<h3>Contact Me!</h3>
+					<h4>Send me an email using the contact form or reach out to me on one of the following platforms:</h4>
+					<ul class="social-media-icons">
+						<li><a href="https://www.linkedin.com/in/olivia-misasi/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+						<li><a href="https://www.facebook.com/oliviamisasi" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+						<li><a href="https://github.com/omisasi" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<form class="contact-form" action="contactform.php" method="post">
+					<input type="text" name="fname" placeholder="First Name...">
+					<input type="text" name="lname" placeholder="Last Name...">
+					<input type="text" name="email" placeholder="Your Email Address...">
+					<textarea name="message" placeholder="Write your message here..."></textarea>
+					<button type="submit" name="submit">SEND EMAIL</button>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h4>Created by Olivia Misasi | Last Updated May 2020</h4>
+			</div>
+		</div>
+	</div>
+</footer>
 </body>
 </html>
